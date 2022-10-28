@@ -1,0 +1,13 @@
+- var author = 'Vladimir';
+- var links = ['contacts', 'works', 'support', 'home'];
+header.header 
+    .container
+        nav.header__nav
+            a(href="#", class="logo") #{author}
+            ul.header__list(data-id="sasfaf")
+                each val in links 
+                    li 
+                        a(href="#", class="header__link") #{val}
+            .header__search 
+                input(type="text")
+                span.span x 
